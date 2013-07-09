@@ -23,9 +23,13 @@ Vagrant.configure("2") do |config|
   # Port forwarding configuration for Rails development
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
+  # Network configuration DHCP
+  #config.vm.network :public_network
+
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = 'manifests'
     puppet.manifest_file  = "base.pp"
+    puppet.options = "--verbose --debug"
   end
 
   config.vm.provision :puppet do |puppet|
