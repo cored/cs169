@@ -1,4 +1,4 @@
-## CS169 - VM for SaaS class from Berkley [https://www.edx.org/school/uc%20berkeleyx/allcourses]
+## CS169 - VM for SaaS class from [Berkley](https://www.edx.org/school/uc%20berkeleyx/allcourses)
 
 ### Disadvantage of using Virtual Box images
 1. Needs a lot of disk space
@@ -22,4 +22,4 @@ is an example in the repo - Thanks to David Kerber)
 Fork the repo and send a pull request 
 
 ### Inspiration
-https://github.com/davekerber/vagrant-example
+[Vagrant Example from David Kerber](https://github.com/davekerber/vagrant-example)
