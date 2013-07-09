@@ -1,10 +1,5 @@
 ## CS169 - VM for SaaS class from [Berkley](https://www.edx.org/school/uc%20berkeleyx/allcourses)
 
-### Disadvantage of using Virtual Box images
-1. Needs a lot of disk space
-2. More difficult to share
-3. Upgrades are hard
-
 ### Usage
 1. Install git
 2. Install vagrant and virtual box on your machine 
