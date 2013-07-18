@@ -1,3 +1,5 @@
+include rvm
+
 package { ['git'] :
   ensure => present
 }
@@ -8,3 +10,5 @@ exec { 'configure git' :
   cwd => '/home/vagrant',
   require => [Package['git']]
 }
+
+rvm::system_user { vagrant: ; }

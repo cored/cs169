@@ -26,9 +26,13 @@ Vagrant.configure("2") do |config|
   # Network configuration DHCP
   config.vm.network :public_network
 
+  # Updating the entire system
+  config.vm.provision :shell, :inline => 'apt-get update'
+
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = 'manifests'
     puppet.manifest_file  = "base.pp"
+    puppet.module_path = 'modules'
     puppet.options = "--verbose --debug"
   end
 
